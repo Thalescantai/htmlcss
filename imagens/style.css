@@ -1,0 +1,148 @@
+header {
+    background: #BBBBBB; 
+    padding: 20px 0; /* espaçamento interno é o padding*/
+}
+
+.caixa{
+    position: relative;
+    width: 940px; /*configurar o tamanho*/
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px; /*pq 0 0 0 15? pq foi acrescentado um espaço a esquerda de todos os q estao no "li" e começa primeiro pro top, depois pra direita depois baixo e depois esquerda.*/
+}
+nav a {
+    text-transform: uppercase; /*colocar o texto em maiusculo*/
+    color: #000000; /*cor do texto*/
+    font-weight: bold; /*fonte grande do texto*/
+    font-size: 22px; /*tamanha da fonte*/
+    text-decoration: none; /*tirar a decoração do texto*/
+}
+
+nav a:hover { /* hover é pra quando colocar o mouse em cima */
+    color: #ddc9a1;
+    text-decoration: underline;
+}
+
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li{
+    display: inline-block; 
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-color: #000000;
+    border-width: 2px;
+    border-style: solid;
+    /* border: 2px solid #000000;   PODE SER UMA OPÇÃO */
+    border-radius: 10px; /* arredonda as bordas. */
+}
+
+.produtos li:hover{
+    border-color: #C78C19; /*ao colocar o mouse em cima vai mudar pra essa cor*/
+}
+
+.produtos li:hover h2{
+    font-size: 34px;
+}
+.produtos li:active{
+    border-color: #088C19;
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+
+}
+
+.produto-descricao{
+    font-size: 18px;
+}
+
+footer { /*rodape*/ 
+    text-align: center;
+    background: url("bg.jpg");
+    padding: 40px 0;
+}
+
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-top: 20px 0 0;
+}
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+form{
+    margin: 40px 0;
+}
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%; 
+    padding: 15px 0;
+    background: orange;
+    color: white; /*cor do texto*/
+    font-weight: bold; /*cor em negrito do texto*/
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer; /*transformar o cursor na maozinha*/
+}
+
+.enviar:hover {
+    background: darkorange;
+/* transform: rotate(70deg); rodar em 70 graus, graus em ingles é degres*/
+    transform: scale(1.2); /*aumentar em 20%, ta multiplicando em 1.2 */
+}
+
+table{
+    margin: 20px 0 40px;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{ 
+    border: 1px solid #000000; /*aplicar a borda na tabela*/
+    padding: 8px 15px;
+}
